@@ -9,6 +9,12 @@ it('Should calculate the low tax bracket', function() {
     expect(calculateTaxes(0).toEqual(0));
 })
 
+it('Should reject invalid incomes', function() {
+    expect(() => calculateTaxes('addajdjd').toThrowError());
+    expect(() => calculateTaxes([]).toThrowError());
+    expect(() => calculateTaxes(true).toThrowError());
+})
+
 it('Should remove duplicates from an array', function() {
     expect(removeDupes([1, 1, 2, 3])).toEqual([1, 2, 3]);
     expect(removeDupes([1, 2, 3])).toBeInstanceOf(Array);
