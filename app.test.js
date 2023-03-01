@@ -34,3 +34,12 @@ describe('remove tests', function() {
         expect(remove([1, 2, 3], 2)).not.toContain(2);
     })
 })
+
+describe('submitForm() tests', function() {
+    it('saves input val to usernames', () => {
+        input.value = 'Kabareebe';
+    submitForm();
+    expect(usernames.length).tobe(1);
+    expect(usernames).toContain('Kabareebe');
+    });
+})

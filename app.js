@@ -19,3 +19,11 @@ function removeDupes(values) {
 function remove(arr, val) {
     return arr.filter((item) => item !== val);
 }
+
+const usernames = [];
+
+let input = document.getElementById('username');
+
+function submitForm() {
+    usernames.push(input.value);
+}
