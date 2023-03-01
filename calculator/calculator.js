@@ -40,6 +40,7 @@ window.addEventListener('DOMContentLoaded', function() {
     // Update the monthly payment
     const currentUIValues = getCurrentUIValues();
     updateMonthly(calculateMonthlyPayment(currentUIValues));
+    
   }
   
   function calculateMonthlyPayment(values) {
