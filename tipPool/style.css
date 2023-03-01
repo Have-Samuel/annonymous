@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: helvetica;
     margin: 30px;
@@ -27,6 +33,8 @@ body {
   }
   
   button {
+    color: rgb(17, 17, 17);
+    background-color: rgb(142, 136, 148);
     cursor: pointer;
     width: 90px;
     height: 30px;
@@ -54,4 +62,3 @@ body {
   .deleteBtn {
     cursor: pointer;
   }
-  
