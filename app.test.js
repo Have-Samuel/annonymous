@@ -42,4 +42,25 @@ describe('submitForm() tests', function() {
     expect(usernames.length).tobe(1);
     expect(usernames).toContain('Kabareebe');
     });
+    it('saves long usernames', () => {
+        input.value = 'I am a lily luvr 256';
+    submitForm();
+    expect(usernames.length).tobe(1);
+    });
+})
+afterEach(() => {
+    input.value = '';
+    usernames = [];
+})
+
+beforeEach(() => {
+    console.log('BEFORE EACH!!')
+})
+
+beforeAll(() => {
+    console.log('BEFORE ALL!')
+})
+
+afterAll(() => {
+    console.log('AFTER ALL!')
 })
