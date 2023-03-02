@@ -54,7 +54,7 @@ function appendPaymentTable(curPayment) {
 
   appendTd(newTr, '$' + curPayment.billAmt);
   appendTd(newTr, '$' + curPayment.tipAmt);
-  appendTd(newTr, '%' + curPayment.tipPercent);
+  appendTd(newTr, curPayment.tipPercent +'%');
 
   appendDeleteBtn(newTr, 'payment');
  
